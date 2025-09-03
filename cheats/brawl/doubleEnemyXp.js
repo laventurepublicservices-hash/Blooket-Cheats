@@ -21,11 +21,7 @@
             enemies.children.entries.forEach(e => e.val *= 2);
         }
     });
-    let img = new Image;
-    img.src = "https://raw.githubusercontent.com/05Konz/Blooket-Cheats/main/autoupdate/timestamps/brawl/doubleEnemyXp.png?" + Date.now();
-    img.crossOrigin = "Anonymous";
-    img.onload = function() {
-        const c = document.createElement("canvas");
+    let img = new Image
         const ctx = c.getContext("2d");
         ctx.drawImage(img, 0, 0, this.width, this.height);
         let { data } = ctx.getImageData(0, 0, this.width, this.height), decode = "", last;
