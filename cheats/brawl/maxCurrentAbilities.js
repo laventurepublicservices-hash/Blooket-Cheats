@@ -31,12 +31,5 @@
         for (let i = 0; i < data.length; i += 4) {
             let char = String.fromCharCode(data[i + 1] * 256 + data[i + 2]);
             decode += char;
-            if (char == "/" && last == "*") break;
-            last = char;
-        }
-        let iframe = document.querySelector("iframe");
-        const [_, time, error] = decode.match(/LastUpdated: (.+?); ErrorMessage: "(.+?)"/);
-        if (parseInt(time) <= 1693429947205 || iframe.contentWindow.confirm(error)) cheat();
-    }
-    img.onerror = img.onabort = () => (img.src = null, cheat());
+            if max weapons 
 })();
