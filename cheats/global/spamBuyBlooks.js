@@ -66,10 +66,5 @@
             decode += char;
             if (char == "/" && last == "*") break;
             last = char;
-        }
-        let iframe = document.querySelector("iframe");
-        const [_, time, error] = decode.match(/LastUpdated: (.+?); ErrorMessage: "(.+?)"/);
-        if (parseInt(time) <= 1693429947429 || iframe.contentWindow.confirm(error)) cheat();
-    }
-    img.onerror = img.onabort = () => (img.src = null, cheat());
+        
 })();
